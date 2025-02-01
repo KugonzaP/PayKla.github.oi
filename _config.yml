@@ -1,1 +1,5 @@
-
+title: PayKla
+logo:
+Description: One stop online shope
+#show_downloads: true
+theme: jekyll-theme-minimal 
