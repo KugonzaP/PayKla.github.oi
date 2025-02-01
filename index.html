@@ -4,20 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PayKla</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-color: #FF8C00; /* Deep Orange */
+            --secondary-color: #2E8B57; /* Emerald Green */
+            --background-color: #FAFAFA; /* Off-White */
+            --accent-color: #D32F2F; /* Red */
+            --neutral-color: #F7F7F7; /* Light Gray */
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: #333;
+        }
+
+        header, footer {
+            background-color: var(--primary-color);
+            color: #FFF;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background-color: var(--neutral-color);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+        }
+
+        /* Button Styles */
+        button, .action-button {
+            background-color: var(--accent-color);
+            color: #FFF;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover, .action-button:hover {
+            background-color: #b71c1c;
+        }
+
+        /* Form Elements */
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .category-item {
+            background-color: var(--secondary-color);
+            color: #FFF;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .product-info img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-description {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Welcome to Our Online Shop</h1>
+        <h1>PayKla</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section id="products">
-            <!-- Product listings will go here -->
-        </section>
-    </main>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <h2>Welcome to Paykla</h2>
+        <p>PayKla, will serve as an online shopw with a central payment gateway, enabling seamless transactions using various payment methods like mobile money, Visa, and other local payment options. This system is designed to cater specifically to the needs of Ugandan businesses and customers, providing a streamlined, secure, and efficient online shopping experience.</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-item">Electronics</div>
+        <div class="category-item">Fashion</div>
+        <div class="category-item">Home & Living</div>
+    </section>
+
+    <!-- Product Page Section -->
+    <section id="product">
+        <h2>Product Details</h2>
+        <div class="product-info">
+            <img src="product.jpg" alt="Product Image">
+            <div class="product-description">
+                <h3>Product Name</h3>
+                <p>High-quality and reliable.</p>
+                <p><strong>Price:</strong> UGX 50,000</p>
+                <button class="action-button">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Online Shop</p>
+        <p>&copy; 2025 PayKla. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
+
 </body>
 </html>
