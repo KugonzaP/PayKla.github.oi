@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PqyKla</title>
+    <link rel="stylesheet" href="styles.css">
+   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paykla</title>
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-color: #FF8C00; /* Deep Orange */
+            --secondary-color: #2E8B57; /* Emerald Green */
+            --background-color: #FAFAFA; /* Off-White */
+            --accent-color: #D32F2F; /* Red */
+            --neutral-color: #F7F7F7; /* Light Gray */
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: #333;
+        }
+
+        header, footer {
+            background-color: var(--primary-color);
+            color: #FFF;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background-color: var(--neutral-color);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+        }
+
+        /* Button Styles */
+        button, .action-button {
+            background-color: var(--accent-color);
+            color: #FFF;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover, .action-button:hover {
+            background-color: #b71c1c;
+        }
+
+        /* Form Elements */
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .category-item {
+            background-color: var(--secondary-color);
+            color: #FFF;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .product-info img { IMG_8206.JPG 
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-description {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>PayKla</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <h2>Welcome to Paykla</h2>
+        <p>Discover top products and promotions!</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-item">Electronics</div>
+        <div class="category-item">Fashion</div>
+        <div class="category-item">Food & Snacks</div>
+        <div class="category-item">Home & Living</div>
+    </section>
+
+    <!-- Product Page Section -->
+    <section id="product">
+        <h2>Product Details</h2>
+        <div class="product-info">
+            <img src="IMG_8199.JPG" alt="Rose quartz Pendant">
+            <div class="High quality quartz pendant got from the beautiful African soils">
+                <h3>Raw rose quartz</h3>
+                <p>High-quality .</p>
+                <p><strong>Price:</strong> UGX 60,000</p>
+                <button class="action-button">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PayKla. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h1>PayKla</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <h2>Welcome to PayKla</h2>
+        <p>Discover top products and promotions!</p>
+        <div class="promotions">
+            <img src="IMG_8202.JPG" alt="Promotion 1">
+            <img src="redvelvetcake.jpg" alt="Promotion 2">
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <div class="category-item">
+                <h3>Electronics</h3>
+                <p>Find the latest gadgets.</p>
+            </div>
+            <div class="category-item">
+                <h3>Fashion</h3>
+                <p>Trendy styles for everyone.</p>
+            </div>
+            <div class="category-item">
+            </div>
+            <div class="category-item">
+                <h3>Food & Snacks</h3>
+                <p>Tasty bites for everyone.</p>
+            </div>
+                <h3>Home & Living</h3>
+                <p>Essentials for your home.</p>
+            </div>
+        </div>
+        <div class="filters">
+            <label>Sort by:</label>
+            <select>
+                <option value="popularity">Popularity</option>
+                <option value="price">Price</option>
+                <option value="newest">Newest</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Product Page Section -->
+    <section id="product">
+        <h2>Product Details</h2>
+        <div class="product-info">
+            <img src="IMG_8195" alt="Product Image">
+            <div class="product-description">
+                <h3>Product Name</h3>
+                <p>Description of the product goes here. High-quality and reliable.</p>
+                <p><strong>Price:</strong> UGX 50,000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Account and Dashboard Section -->
+    <section id="account">
+        <h2>Your Account</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">Login</button>
+            <a href="#register">Create an Account</a>
+        </form>
+        <div class="dashboard">
+            <h3>Dashboard</h3>
+            <p>Track your orders and manage account settings here.</p>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <form id="payment-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="mtn">MTN Mobile Money</option>
+                <option value="airtel">Airtel Money</option>
+                <option value="card">Credit/Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <button type="submit">Complete Purchase</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PayKla. All rights reserved.</p>
+    </footer>
+    
+    <!-- Payment Integration Section -->
+    <section id="payment-options">
+        <h2>Payment Options</h2>
+        <p>Choose from a variety of payment methods, including mobile money and credit/debit cards.</p>
+        <form id="payment-method-form">
+            <label for="payment-method">Select Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="mtn">MTN Mobile Money</option>
+                <option value="airtel">Airtel Money</option>
+                <option value="credit">Credit/Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <button type="submit">Confirm Payment</button>
+        </form>
+    </section>
+
+    <!-- Order Tracking Section -->
+    <section id="order-tracking">
+        <h2>Track Your Order</h2>
+        <p>Enter your order ID to track the delivery status.</p>
+        <form id="tracking-form">
+            <label for="order-id">Order ID:</label>
+            <input type="text" id="order-id" name="order-id" required>
+            <button type="submit">Track Order</button>
+        </form>
+        <div id="tracking-results">
+            <p>Order Status: <span>In Transit</span></p>
+            <p>Estimated Delivery: <span>3 Days</span></p>
+        </div>
+    </section>
+
+    <!-- Live Chat Support Section -->
+    <section id="live-chat">
+        <h2>Need Help? Chat with Us</h2>
+        <p>Our support team is here to help! Start a live chat session below.</p>
+        <button id="chat-button">Start Chat</button>
+        <div id="chat-window" style="display:none;">
+            <p><strong>Support:</strong> How can we assist you today?</p>
+            <input type="text" id="user-message" placeholder="Type your message...">
+            <button type="button" onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <!-- Wishlist Section -->
+    <section id="wishlist">
+        <h2>Your Wishlist</h2>
+        <p>Save your favorite items for later!</p>
+        <ul id="wishlist-items">
+            <li>Product 1 - <button>Remove</button></li>
+            <li>Product 2 - <button>Remove</button></li>
+            <li>Product 3 - <button>Remove</button></li>
+        </ul>
+        <button id="clear-wishlist">Clear Wishlist</button>
+    </section>
+
+    <!-- Review and Rating System Section -->
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <p>Share your experience and rate the products you've purchased.</p>
+        <form id="review-form">
+            <label for="review">Write a Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <label for="rating">Rate This Product:</label>
+            <select id="rating" name="rating">
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+            </select>
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="reviews-list">
+            <h3>Recent Reviews:</h3>
+            <p><strong>User 1:</strong> Great product! 5/5</p>
+            <p><strong>User 2:</strong> Good value for money. 4/5</p>
+        </div>
+    </section>
+
+    <!-- Localized Delivery Options Section -->
+    <section id="delivery-options">
+        <h2>Delivery Options</h2>
+        <p>Select your region to see estimated delivery times.</p>
+        <form id="delivery-zone-form">
+            <label for="region">Choose Your Region:</label>
+            <select id="region" name="region">
+                <option value="central">Central Uganda</option>
+                <option value="eastern">Eastern Uganda</option>
+                <option value="western">Western Uganda</option>
+                <option value="northern">Northern Uganda</option>
+            </select>
+            <button type="submit">Check Delivery Time</button>
+        </form>
+        <div id="delivery-time">
+            <p>Estimated Delivery Time: <span>2-3 Days</span></p>
+        </div>
+    </section>
+
+    <script>
+        // Simple JS for toggling chat window visibility
+        document.getElementById('chat-button').onclick = function() {
+            const chatWindow = document.getElementById('chat-window');
+            chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function sendMessage() {
+            const userMessage = document.getElementById('user-message').value;
+            // Code to send message to the support team or chat bot
+        }
+    </script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayKla</title>
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-color: #FF8C00; /* Deep Orange */
+            --secondary-color: #2E8B57; /* Emerald Green */
+            --background-color: #FAFAFA; /* Off-White */
+            --accent-color: #D32F2F; /* Red */
+            --neutral-color: #F7F7F7; /* Light Gray */
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: #333;
+        }
+
+        header, footer {
+            background-color: var(--primary-color);
+            color: #FFF;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background-color: var(--neutral-color);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+        }
+
+        /* Button Styles */
+        button, .action-button {
+            background-color: var(--accent-color);
+            color: #FFF;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover, .action-button:hover {
+            background-color: #b71c1c;
+        }
+
+        /* Form Elements */
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .category-item {
+            background-color: var(--secondary-color);
+            color: #FFF;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .product-info img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-description {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>PayKla</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <h2>PayKla</h2>
+        <p>Discover top products and promotions!</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-item">Electronics</div>
+        <div class="category-item">Fashion</div>
+        <div class="category-item">Food & Snacks</div>
+        <div class="category-item">Home & Living</div>
+    </section>
+
+    <!-- Product Page Section -->
+    <section id="product">
+        <h2>Product Details</h2>
+        <div class="product-info">
+            <img src="chicken.jpg" alt="Product Image">
+            <div class="Finger licking good">
+                <h3>Chicken</h3>
+                <p>Description of the product goes here. High-quality and reliable.</p>
+                <p><strong>Price:</strong> UGX 35,000</p>
+                <button class="action-button">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PayKla. All rights reserved.</p>
+    </footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayKla</title>
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-color: #FF8C00; /* Deep Orange */
+            --secondary-color: #2E8B57; /* Emerald Green */
+            --background-color: #FAFAFA; /* Off-White */
+            --accent-color: #D32F2F; /* Red */
+            --neutral-color: #F7F7F7; /* Light Gray */
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: #333;
+        }
+
+        header, footer {
+            background-color: var(--primary-color);
+            color: #FFF;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background-color: var(--neutral-color);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+        }
+
+        /* Button Styles */
+        button, .action-button {
+            background-color: var(--accent-color);
+            color: #FFF;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover, .action-button:hover {
+            background-color: #b71c1c;
+        }
+
+        /* Form Elements */
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .category-item {
+            background-color: var(--secondary-color);
+            color: #FFF;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .product-info img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-description {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>PayKla</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <h2>PayKla</h2>
+        <p>Discover top products and promotions!</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-item">Electronics</div>
+        <div class="category-item">Fashion</div>
+        <div class="category-item">Food & Snacks</div>
+        <div class="category-item">Home & Living</div>
+    </section>
+
+    <!-- Product Page Section -->
+    <section id="product">
+        <h2>Product Details</h2>
+        <div class="product-info">
+            <img src="IMG_8195.JPG" alt="Product Image">
+            <div class="product-description">
+                <h3>Soapstone Bowl</h3>
+                <p>High-quality and reliable.</p>
+                <p><strong>Price:</strong> UGX 25,000</p>
+                <button class="action-button">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PayKla. All rights reserved.</p>
+    </footer>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayKla</title>
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-color: #FF8C00; /* Deep Orange */
+            --secondary-color: #2E8B57; /* Emerald Green */
+            --background-color: #FAFAFA; /* Off-White */
+            --accent-color: #D32F2F; /* Red */
+            --neutral-color: #F7F7F7; /* Light Gray */
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: #333;
+        }
+
+        header, footer {
+            background-color: var(--primary-color);
+            color: #FFF;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background-color: var(--neutral-color);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+        }
+
+        /* Button Styles */
+        button, .action-button {
+            background-color: var(--accent-color);
+            color: #FFF;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover, .action-button:hover {
+            background-color: #b71c1c;
+        }
+
+        /* Form Elements */
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .category-item {
+            background-color: var(--secondary-color);
+            color: #FFF;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .product-info img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-description {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>PayKla</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <h2>PayKla</h2>
+        <p>Discover top products and promotions!</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-item">Electronics</div>
+        <div class="category-item">Fashion</div>
+        <div class="category-item">Food & Snacks</div>
+        <div class="category-item">Home & Living</div>
+    </section>
+
+    <!-- Product Page Section -->
+    <section id="product">
+        <h2>Product Details</h2>
+        <div class="Dining table">
+            <img src="IMG_0112.jpg" alt="Product Image">
+            <div class="product-description">
+                <h3>Dining Table</h3>
+                <p>Description of the product goes here. High-quality and reliable.</p>
+                <p><strong>Price:</strong> UGX 250,000</p>
+                <button class="action-button">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PayKla. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+</body>
+</html>
